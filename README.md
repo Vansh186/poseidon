@@ -67,4 +67,7 @@ Calypso also comes packed with a variety of features, such as:
   * Per **command disabling**
   * And much more! There are over **30+** settings to tweak!
 
+## SELF HOSTING
 
+  I wont be telling y'all how to self host this bot :D If you have **Ample Knowledge** about discord.js then you would definitely be able to figure it out on your own 
+***All The Best***
