@@ -1,6 +1,6 @@
-# Calypso
+# Poseidon
 
-Calypso is Discord bot built with [discord.js](https://github.com/discordjs/discord.js) that started out as a side project, but has now morphed into something much more. She is a multi-purpose bot with commands ranging from message deletion to random dog pics! Calypso was designed with flexibility in mind, making it very easy to modify existing features or add new ones. Currently a WIP.
+Poseidon is Discord bot built with [discord.js](https://github.com/discordjs/discord.js) that started out as a side project, but has now morphed into something much more. She is a multi-purpose bot with commands ranging from message deletion to random dog pics! Poseidon was designed with flexibility in mind, making it very easy to modify existing features or add new ones. Currently a WIP.
 
 ## Features
 
@@ -15,9 +15,9 @@ Calypso is Discord bot built with [discord.js](https://github.com/discordjs/disc
 
 ## Getting Started
 
-You can add Calypso to your server with [this](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=2146958679) link! Alternatively, you can feel free to clone this repo and host the bot yourself.
+You can add Poseidon to your server with [this](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=2146958679) link! Alternatively, you can feel free to clone this repo and host the bot yourself.
 ```
-git clone https://github.com/sabattle/Calypso
+git clone https://github.com/Vansh186/poseidon
 ```
 
 ### Installation
