@@ -10,7 +10,7 @@ module.exports = class BotInfoCommand extends Command {
       name: 'botinfo',
       aliases: ['bot', 'bi'],
       usage: 'botinfo',
-      description: 'Fetches Calypso\'s bot information.',
+      description: 'Fetches Poseidon\'s bot information.',
       type: client.types.INFO
     });
   }
@@ -24,13 +24,13 @@ module.exports = class BotInfoCommand extends Command {
       Database    :: SQLite
     `;
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Bot Information')
+      .setTitle('Poseidon\'s Bot Information')
       .setDescription(oneLine`
         Calypso is an open source, fully customizable Discord bot that is constantly growing.
         She comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
         Her codebase also serves as a base framework to easily create Discord bots of all kinds.
-        She first went live on **February 22nd, 2018**.
+        She first went live on **December 22nd, 2020**.
       `)
       .addField('Prefix', `\`${prefix}\``, true)
       .addField('Client ID', `\`${message.client.user.id}\``, true)
@@ -38,11 +38,11 @@ module.exports = class BotInfoCommand extends Command {
       .addField('Tech', `\`\`\`asciidoc\n${tech}\`\`\``)
       .addField(
         'Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=850252921912164382&scope=bot&permissions=8) | ' +
+        '[Support Server](https://discord.gg/wxFdPVSHQV) | ' +
+        '[Repository](https://github.com/Vansh186/poseidon)**'
       )
-      .setImage('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Title.png')
+      .setImage('https://images.creativemarket.com/0.1.0/ps/3865702/1820/1214/m1/fpnw/wm0/pose1-.png?1516282141&s=86773efd15367e1ed00a632a9a1f2461')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

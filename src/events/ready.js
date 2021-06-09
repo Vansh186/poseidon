@@ -1,9 +1,10 @@
 module.exports = async (client) => {
   
-  const activities = [
-    { name: 'your commands', type: 'LISTENING' }, 
-    { name: '@Calypso', type: 'LISTENING' }
+   const activities = [
+    { name: 'p!', type: 'LISTENING' }, 
+    { name: '@Posedion', type: 'LISTENING' }
   ];
+
 
   // Update presence
   client.user.setPresence({ status: 'online', activity: activities[0] });

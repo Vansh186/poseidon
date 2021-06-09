@@ -1,7 +1,7 @@
 const config = require('./config.json');
 const Client = require('./src/Client.js');
 const { Intents } = require('discord.js');
-
+const keepAlive = require('./server.js');
 global.__basedir = __dirname;
 
 // Client setup
@@ -21,9 +21,12 @@ function init() {
   client.loadEvents('./src/events');
   client.loadCommands('./src/commands');
   client.loadTopics('./data/trivia');
-  client.login(client.token);
+  keepAlive();
+  client.login(process.env.TOKEN);
 }
 
 init();
+
+
 
 process.on('unhandledRejection', err => client.logger.error(err));

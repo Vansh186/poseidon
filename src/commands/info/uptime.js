@@ -8,7 +8,7 @@ module.exports = class UptimeCommand extends Command {
       name: 'uptime',
       aliases: ['up'],
       usage: 'uptime',
-      description: 'Fetches Calypso\'s current uptime.',
+      description: 'Fetches Posedion\'s current uptime.',
       type: client.types.INFO
     });
   }
@@ -20,8 +20,8 @@ module.exports = class UptimeCommand extends Command {
     const seconds = (d.seconds() == 1) ? `${d.seconds()} second` : `${d.seconds()} seconds`;
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Uptime')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setTitle('Posedion\'s Uptime')
+      .setThumbnail('https://images.creativemarket.com/0.1.0/ps/3865702/1820/1214/m1/fpnw/wm0/pose1-.png?1516282141&s=86773efd15367e1ed00a632a9a1f2461')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
       .addField('Date Launched', date) 
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

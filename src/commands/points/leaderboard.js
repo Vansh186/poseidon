@@ -7,7 +7,7 @@ module.exports = class LeaderboardCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'leaderboard',
-      aliases: ['top', 'lb', 'rankings'],
+      aliases: ['top', 'lb points', 'rankings'],
       usage: 'leaderboard [member count]',
       description: oneLine`
         Displays the server points leaderboard of the provided member count. 

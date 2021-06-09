@@ -39,7 +39,7 @@ module.exports = class HelpCommand extends Command {
       
       embed // Build specific command help embed
         .setTitle(`Command: \`${command.name}\``)
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setThumbnail('https://images.creativemarket.com/0.1.0/ps/3865702/1820/1214/m1/fpnw/wm0/pose1-.png?1516282141&s=86773efd15367e1ed00a632a9a1f2461')
         .setDescription(command.description)
         .addField('Usage', `\`${prefix}${command.usage}\``, true)
         .addField('Type', `\`${capitalize(command.type)}\``, true)
@@ -85,7 +85,7 @@ module.exports = class HelpCommand extends Command {
       const size = message.client.commands.size - commands[OWNER].length;
 
       embed // Build help embed
-        .setTitle('Calypso\'s Commands')
+        .setTitle('Poseidon\'s Commands')
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}help [command]\`
@@ -97,7 +97,7 @@ module.exports = class HelpCommand extends Command {
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
-        .setImage('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Title.png')
+        .setImage('https://images.creativemarket.com/0.1.0/ps/3865702/1820/1214/m1/fpnw/wm0/pose1-.png?1516282141&s=86773efd15367e1ed00a632a9a1f2461')
         .setColor(message.guild.me.displayHexColor);
 
       for (const type of Object.values(message.client.types)) {
@@ -105,12 +105,16 @@ module.exports = class HelpCommand extends Command {
         if (commands[type][0])
           embed.addField(`**${emojiMap[type]} [${commands[type].length}]**`, commands[type].join(' '));
       }
-
+      embed.addField("**<a:solar_music:839832243212124181> Music[22]**", `\`play\` \`pause\` \`leave\` \`lyrics\` \`skipto\` \`skip\` \`volume\` \`shuffle\` \`seek\` \`search\` \`resume\` \`remove\` \`queue\` \`nowplaying\` \`loop\` \`loopqueue\` \`grab\` \`config\` \`clear\` \`bassboost\(low/med/high\)\` `)
+      embed.addField("**<:lb:851076543082135602> Leveling[3](beta)**", "`rank` `leaderboard` `setlevelupchannel`")
+      embed.addField("**<a:debug:845971502477082624> Backups[3]**", "`create` `info <backup id>` `load <backup id>`")
+      embed.addField("**<a:verify:850326669335199784> Verification[3]**", "`setverificationchannel` `setverificationrole` `disableverification` `verify`")
+      embed.addField("**<:wumpus_nitro:847454590626299924> Not Quite Nitro**", "`Use Nitro emojis without having Discord nitro perks` type emoji name in format `:hello:`")
       embed.addField(
         '**Links**', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
-        '[Repository](https://github.com/sabattle/CalypsoBot)**'
+        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=850252921912164382&scope=bot&permissions=8) | ' +
+        '[Support Server](https://discord.gg/wxFdPVSHQV) | ' +
+        '[Repository](https://github.com/Vansh186/poseidon)**'
       );
         
     }

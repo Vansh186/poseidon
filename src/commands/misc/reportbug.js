@@ -42,8 +42,8 @@ module.exports = class ReportBugCommand extends Command {
       .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
       .setDescription(oneLine`
         Successfully sent bug report!
-        Please join the [Calypso Support Server](https://discord.gg/pnYVdut) to further discuss your issue.
-        Additionally, feel free to submit an issue on [GitHub](https://github.com/sabattle/CalypsoBot/issues).
+        Please join the [Calypso Support Server](https://discord.gg/wxFdPVSHQV) to further discuss your issue.
+        Additionally, feel free to submit an issue on [GitHub](https://github.com/Vansh186/poseidon/issues).
       `) 
       .addField('Member', message.member, true)
       .addField('Message', report)
