@@ -46,14 +46,4 @@ To have colors on your server, first create a bunch of empty roles on your serve
 
 ## Authors
 
-* **Sebastian Battle** - *Initial work* - [github](https://github.com/sabattle)
-* **Kyle Glaws** - [github](https://github.com/krglaws)
-
-## License
-
-MIT
-
-## To-Do
-
-* Music/DJ functionality
-* Twitch Integration
+Vansh pog
